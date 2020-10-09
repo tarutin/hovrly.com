@@ -1,3 +1,4 @@
+const config = require('./config')
 const compression = require('compression')
 const express = require('express')
 const path = require('path')
@@ -11,15 +12,21 @@ app.use('/static', express.static(__dirname + '/static'))
 app.use(compression())
 
 app.get('/', function (req, res) {
-    res.render('index')
+    res.render('index', { config: config, meta: null })
 })
 
 app.get('/donate', function (req, res) {
-    res.render('donate')
+    res.render('donate', {
+        config: config,
+        meta: { title: 'Donate' }
+    })
 })
 
 app.get('*', function (req, res) {
-    res.render('404')
+    res.render('404', {
+        config: config,
+        meta: { title: '404' }
+    })
 })
 
 
