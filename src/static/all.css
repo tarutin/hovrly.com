@@ -1,0 +1,26 @@
+
+* { font-weight:400; font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif; padding:0; margin:0; outline:none; }
+body { padding:70px; font-weight:400; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; padding-right:15%; }
+
+p { font-size:50px; margin:20px 0; line-height:1.2; }
+p small { font-size:30px; }
+a { color:blue; text-decoration:none; border-bottom:3px solid rgba(0, 0, 255, .3); }
+a:hover { border-bottom-color:rgba(255, 0, 0, .3); color:red; }
+b { font-weight:600; }
+h1 { font-size:90px; font-weight:100; margin-bottom:50px; }
+
+body.night { background:#1B1E21; color:#abb2bf; }
+body.night a { color:#568af2; }
+body.night a:hover { color:rgb(224, 108, 117); border-bottom-color:rgba(224, 108, 117, .3); }
+body.night h1 { color:#fff; font-weight:300; }
+
+*::-moz-selection { color:#fff; background:rgb(224, 108, 117); }
+*::selection { color:#fff; background:rgb(224, 108, 117); }
+
+@media(max-width:900px) {
+    body { padding:20px; }
+    p { font-size:20px; margin:15px 0; }
+    p small { font-size:17px; }
+    a { border-bottom-width:2px; }
+    h1 { font-size:40px; margin-bottom:30px; }
+}

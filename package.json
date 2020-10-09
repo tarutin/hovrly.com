@@ -1,0 +1,27 @@
+{
+  "name": "Hovrly.com",
+  "version": "1.0.0",
+  "description": "Hovrly site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon -e js,css,ejs,json index.js"
+  },
+  "keywords": [
+    "nodejs, hovrly, site, app"
+  ],
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "Alexey Tarutin",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@vercel/node": "^1.8.4",
+    "nodemon": "^2.0.4"
+  }
+}
