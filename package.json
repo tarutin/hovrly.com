@@ -1,27 +1,48 @@
 {
   "name": "Hovrly.com",
-  "version": "1.0.0",
   "description": "Hovrly site",
+  "version": "1.0.0",
+  "private": true,
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon -e js,css,ejs,json index.js"
-  },
   "keywords": [
     "nodejs, hovrly, site, app"
   ],
-  "engines": {
-    "node": "12.x"
-  },
   "author": "Alexey Tarutin",
   "license": "MIT",
   "dependencies": {
-    "compression": "^1.7.4",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.0.1",
+    "joi": "^17.2.1",
+    "morgan": "^1.10.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
     "@vercel/node": "^1.8.4",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "react-scripts": "^3.4.3"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "react-scripts build",
+    "server": "nodemon -e js,css,ejs,json index.js dev",
+    "client": "export PORT=3100 && react-scripts start"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
