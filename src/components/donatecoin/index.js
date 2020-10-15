@@ -1,5 +1,4 @@
 import React from 'react'
-import ContentLoader from 'react-content-loader'
 import config from '../../config'
 import Loader from '../misc/loader'
 
