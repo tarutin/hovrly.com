@@ -9,7 +9,7 @@ class Loader extends React.Component {
                 height={20}
                 backgroundColor="#2a2e33"
                 foregroundColor="#546070"
-                style={{ width: this.props.width, borderRadius: '20px' }}
+                style={{ width: this.props.width, borderRadius: '0px' }}
                 {...this.props}
             >
                 <rect x="0" y="0" rx="3" ry="3" width="100%" height="100%" />
