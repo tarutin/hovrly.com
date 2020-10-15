@@ -3,6 +3,7 @@ const app = express()
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const path = require('path')
+const fetch = require('node-fetch')
 const config = require('./config')
 
 app.use(morgan('dev'))
@@ -19,6 +20,15 @@ app.use(function (req, res, next) {
 
 app.get('/ping', (req, res) => {
     res.send('/pong')
+})
+
+app.get('/version', async (req, res) => {
+    await sleep(1000)
+    await fetch('https://raw.githubusercontent.com/tarutin/hovrly/master/package.json')
+        .then(res => res.json())
+        .then(json => {
+            res.send({version: json.version})
+        })
 })
 
 

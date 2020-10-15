@@ -12,8 +12,8 @@ function Donate() {
     return (
         <div>
             <h1>Support Us</h1>
-            <DonateCoin coin='btc' width='50%'/>
-            <DonateCoin coin='eth' width='60%'/>
+            <DonateCoin coin='btc' loaderwidth='50%'/>
+            <DonateCoin coin='eth' loaderwidth='60%'/>
             <h1><Link to='/'>&larr;</Link></h1>
         </div>
     )
