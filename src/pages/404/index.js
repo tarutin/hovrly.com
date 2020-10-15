@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import config from '../../config'
+import Footer from '../../components/footer'
 
 function NotFound() {
 
@@ -9,10 +10,13 @@ function NotFound() {
     })
 
     return (
-        <div>
-            <h1>404</h1>
-            <h1><Link to='/'>&larr;</Link></h1>
-        </div>
+        <>
+            <main>
+                <h1>404</h1>
+                <h1><Link to='/'>&larr;</Link></h1>
+            </main>
+            <Footer/>
+        </>
     )
 }
 
