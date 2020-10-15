@@ -6,4 +6,4 @@ import * as worker from './utils/worker'
 
 ReactDOM.render(<App />, document.getElementById('root'))
 
-worker.register()
+worker.unregister()

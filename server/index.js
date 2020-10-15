@@ -18,7 +18,13 @@ app.use(function (req, res, next) {
 // app.use('/api', require('./routes/user'))
 
 app.get('/ping', (req, res) => {
-    res.send({s: '/pong'})
+    res.send('/pong')
+})
+
+
+app.get('/donate/getcoin/:coin', async (req, res) => {
+    await sleep(1000);
+    res.send({addr: config.donate[req.params.coin]})
 })
 
 if(!config.isDev) {
@@ -31,3 +37,9 @@ if(!config.isDev) {
 app.listen(config.port, () => {
     console.log(`server on http://localhost:${config.port}`)
 })
+
+function sleep(ms) {
+    return new Promise((resolve) => {
+        setTimeout(resolve, ms)
+    })
+}
