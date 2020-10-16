@@ -13,8 +13,8 @@ class App extends Component {
 
         return (
             <BrowserRouter>
-                <ScrollToTop/>
                 <div>
+                    <ScrollToTop/>
                     <Switch>
                         <Route path='/' exact component={Home}/>
                         <Route path='/donate' component={Donate}/>
