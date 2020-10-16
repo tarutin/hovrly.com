@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from '../home';
-import Donate from '../donate';
-import NotFound from '../404';
+import React, { Component } from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import ScrollToTop from '../../components/misc/scrolltop'
+import Home from '../home'
+import Donate from '../donate'
+import NotFound from '../404'
 
 class App extends Component {
 
@@ -12,6 +13,7 @@ class App extends Component {
 
         return (
             <BrowserRouter>
+                <ScrollToTop/>
                 <div>
                     <Switch>
                         <Route path='/' exact component={Home}/>
