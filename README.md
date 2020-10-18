@@ -10,6 +10,6 @@
 
 `npm run client`
 
-### Production via Vercel
+### Production via [Vercel](https://github.com/vercel/vercel)
 
 `vercel --prod`
