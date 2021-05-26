@@ -19,6 +19,6 @@ module.exports = {
 
     getDonateCoin: async (req, res) => {
         await sleep(1000);
-        res.send({addr: config.donate[req.params.coin]})
+        res.send(config.donate[req.params.coin])
     },
 }

@@ -2,7 +2,7 @@
 * { font-weight:400; font-family:-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif; padding:0; margin:0; outline:none; }
 body { padding:70px; font-weight:400; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; padding-right:15%; }
 
-p { font-size:50px; margin:20px 0; line-height:1.2; }
+p { font-size:50px; margin:30px 0; line-height:1.2; }
 p small { font-size:30px; }
 a { color:blue; cursor:pointer; text-decoration:none; border-bottom:3px solid rgba(0, 0, 255, .3); }
 a:hover { border-bottom-color:rgba(255, 0, 0, .3); color:red; text-decoration:none; }

@@ -10,7 +10,8 @@ class DonateCoin extends React.Component {
         this.state = {
             loaded: false,
             coin: props.coin.toUpperCase(),
-            addr: '',
+            address: '',
+            network: '',
         }
     }
 
@@ -19,7 +20,11 @@ class DonateCoin extends React.Component {
             let response = await fetch(`${config.api}/donate/getcoin/${this.props.coin}`)
             let json = await response.json()
 
-            this.setState({loaded: true, addr: json.addr})
+            this.setState({
+                loaded: true,
+                address: json.address,
+                network: json.network
+            })
         }
         catch(error) {
             console.log(error)
@@ -31,7 +36,7 @@ class DonateCoin extends React.Component {
         if(!this.state.loaded) {
             return (
                 <p>
-                    {this.state.coin}<br/>
+                    {this.state.coin} <Loader width='20%'/><br/>
                     <Loader width={this.props.loaderwidth}/>
                 </p>
             )
@@ -39,8 +44,8 @@ class DonateCoin extends React.Component {
 
         return (
             <p>
-                {this.state.coin}<br/>
-                <small>{this.state.addr}</small>
+                {this.state.coin} <small>(Network: {this.state.network})</small><br/>
+                <small>{this.state.address}</small>
             </p>
         )
     }

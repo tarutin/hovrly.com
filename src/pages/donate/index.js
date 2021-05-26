@@ -14,8 +14,9 @@ function Donate() {
         <>
             <main>
                 <h1>Support Us</h1>
-                <DonateCoin coin='btc' loaderwidth='50%'/>
-                <DonateCoin coin='eth' loaderwidth='60%'/>
+                <DonateCoin coin='btc' loaderwidth='54%'/>
+                <DonateCoin coin='eth' loaderwidth='64%'/>
+                <DonateCoin coin='usdt' loaderwidth='64%'/>
                 <h1><Link to='/'>&larr;</Link></h1>
             </main>
             <Footer/>
