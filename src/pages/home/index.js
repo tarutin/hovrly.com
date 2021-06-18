@@ -15,7 +15,8 @@ function Home() {
             <main>
                 <h1>
                     Hovrly —<br/>
-                    best partner for disctributed teams
+                    best partner for<br/>
+                    disctributed teams
                 </h1>
                 <p>
                     <a href='https://app.hovrly.com/download/mac'>Download for MacOS</a> <AppVersion/>
