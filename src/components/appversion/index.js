@@ -28,7 +28,7 @@ class AppVersion extends React.Component {
 
     render() {
         if(!this.state.loaded) {
-            return (<Loader width='90px'/>)
+            return (<Loader width='80px'/>)
         }
 
         return (

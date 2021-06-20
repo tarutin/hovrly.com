@@ -5,7 +5,7 @@ body { padding:70px; font-weight:400; -webkit-font-smoothing:antialiased; text-r
 p { font-size:50px; margin:30px 0; line-height:1.2; }
 p small { font-size:30px; }
 a { color:blue; cursor:pointer; text-decoration:none; border-bottom:3px solid rgba(0, 0, 255, .3); }
-a:hover { border-bottom-color:rgba(255, 0, 0, .3); color:red; text-decoration:none; }
+a:hover { border-bottom-color:rgba(255, 0, 0, .3); color:rgb(224, 108, 117); text-decoration:none; }
 b { font-weight:600; }
 h1 { font-size:90px; font-weight:100; margin-bottom:50px; }
 

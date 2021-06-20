@@ -3,7 +3,7 @@ footer * { font-size:17px; }
 footer a { margin-left:40px; text-decoration:none; border-bottom:3px solid rgba(0, 0, 255, .3); color:#000!important;  }
 footer a:hover { border-bottom-color:rgba(255, 0, 0, .3)!important; color:red!important; text-decoration:none; }
 
-body.night footer a { color:#fff!important; border-bottom:none; }
+body.night footer a { color:#fff!important; }
 body.night footer a:hover { color:rgb(224, 108, 117)!important; border-bottom:3px solid rgba(224, 108, 117, .3)!important; }
 
 /* @media(max-width:900px) {

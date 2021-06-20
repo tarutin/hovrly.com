@@ -14,7 +14,7 @@ function Home() {
         <>
             <main>
                 <h1>
-                    Hovrly —<br/>
+                    Hovrly—<br/>
                     best partner for<br/>
                     disctributed teams
                 </h1>

@@ -1,5 +1,6 @@
 import React from 'react'
 import ContentLoader from 'react-content-loader'
+import Theme from '../../components/misc/theme'
 
 class Loader extends React.Component {
     render() {
@@ -7,8 +8,8 @@ class Loader extends React.Component {
             <ContentLoader
                 speed={2}
                 height={20}
-                backgroundColor="#2a2e33"
-                foregroundColor="#546070"
+                backgroundColor={ Theme.get() === 'dark' ? '#2a2e33' : '#f5f6f7' }
+                foregroundColor={ Theme.get() === 'dark' ? '#546070' : '#eee' }
                 style={{ width: this.props.width, borderRadius: '0px' }}
                 {...this.props}
             >
